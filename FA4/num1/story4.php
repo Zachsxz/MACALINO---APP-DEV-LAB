@@ -1,11 +1,11 @@
 <?php include("header.php"); ?>
 <div class="story-box">
-<h1>The Magic Forest</h1>
-<img src="images/story3.jpg">
+<h1>The Broken Robot</h1>
+<img src="images/story4.jpg">
 <p>
-       Three friends entered a magical forest.
-       They found glowing trees and talking animals.
-       They promised to protect the forest forever.
+       A broken robot was left alone in an old junkyard.
+       A young boy repaired the robot and became its best friend.
+       Together, they helped people around their town every day.
 </p>
 </div>
 <?php include("footer.php"); ?>
