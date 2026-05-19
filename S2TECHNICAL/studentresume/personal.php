@@ -4,10 +4,10 @@ include("header.php");
 
 <h1>Personal Information</h1>
 
-<p>Name: Joshua De Leon</p>
+<p>Name: Mathew Zachary L. Macalino</p>
 <p>Age: 20</p>
 <p>Address: Quezon City</p>
-<p>Email: joshua@gmail.com</p>
+<p>Email: Mathew@gmail.com</p>
 
 <a href="index.php">Back to Home</a>
 

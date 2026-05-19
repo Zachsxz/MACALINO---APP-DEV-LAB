@@ -61,11 +61,11 @@
     <div class="top">
 
         <div class="image">
-            <img src="images/profile.png">
+            <img src="images/profile.jpg">
         </div>
 
         <div class="info">
-            <h2>Joshua De Leon</h2>
+            <h2>Mathew Zachary L. Macalino</h2>
             <p>BS Information Technology Student</p>
         </div>
 
