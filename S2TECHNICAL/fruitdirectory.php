@@ -18,12 +18,13 @@
 
         th, td{
             border: 1px solid black;
-            padding: 10px;
+            padding: 15px;
         }
 
         img{
             width: 120px;
             height: 120px;
+            object-fit: cover;
         }
 
         h2{
@@ -81,8 +82,11 @@ foreach($fruits as $fruit){
 echo "<tr>";
 
 echo "<td><img src='".$fruit[3]."'></td>";
+
 echo "<td>".$fruit[0]."</td>";
+
 echo "<td>".$fruit[1]."</td>";
+
 echo "<td>".$fruit[2]."</td>";
 
 echo "</tr>";
