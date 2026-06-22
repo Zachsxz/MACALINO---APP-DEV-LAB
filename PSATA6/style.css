@@ -1,0 +1,39 @@
+body{
+    font-family: Arial, sans-serif;
+    background:#f2f2f2;
+}
+
+.container{
+    width:350px;
+    margin:auto;
+    margin-top:50px;
+}
+
+label{
+    display:block;
+    margin-top:10px;
+}
+
+input[type=text]{
+    width:100%;
+    padding:10px;
+}
+
+input[type=submit]{
+    width:100%;
+    padding:10px;
+    margin-top:20px;
+}
+
+.view-container{
+    width:800px;
+    margin:auto;
+    margin-top:30px;
+}
+
+.card{
+    border:1px solid gray;
+    padding:15px;
+    margin-bottom:10px;
+    background:white;
+}

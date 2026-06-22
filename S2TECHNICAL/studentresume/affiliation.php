@@ -4,7 +4,8 @@ include("header.php");
 
 <h1>Affiliation</h1>
 
-<p>Member of Programming Club</p>
+<p>AITS Club</p>
+<p>SSG Club</p>
 
 <a href="index.php">Back to Home</a>
 

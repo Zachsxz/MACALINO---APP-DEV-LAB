@@ -65,8 +65,8 @@
         </div>
 
         <div class="info">
-            <h2>Mathew Zachary L. Macalino</h2>
-            <p>BS Information Technology Student</p>
+            <h2>Jamie Noelle V. Flores</h2>
+            <p>CS Information Technology Student</p>
         </div>
 
     </div>
