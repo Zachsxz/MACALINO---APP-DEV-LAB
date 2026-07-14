@@ -1,0 +1,39 @@
+ALLI IN TIMEPIECES — SAMPLE / TEST ACCOUNTS
+=============================================
+(Educational project — no real personal data)
+
+--------------------------------------------------
+SELLER / ADMIN SIDE  (login at /admin/login.php)
+--------------------------------------------------
+Super Admin (full access, incl. Admin Users page):
+  Username: superadmin
+  Password: Admin@123
+  * Created by running setup_admin.php once after DB import.
+
+Regular Admin (create this one yourself via Admin Users page
+to demonstrate the "add admin" feature during defense):
+  Username: staffadmin
+  Password: Staff@123
+  Role: admin
+
+--------------------------------------------------
+BUYER SIDE  (login at /login.php)
+--------------------------------------------------
+Register a new buyer account through /register.php to demonstrate the
+full flow (registration -> email confirmation -> login -> store ->
+cart -> checkout -> payment). Suggested test account:
+
+  Full Name: Test Buyer
+  Email: testbuyer@example.com
+  Password: Buyer@123
+  Address: 123 Sample Street, Quezon City, Philippines
+  Contact Number: 09171234567
+
+NOTE ON EMAIL CONFIRMATION:
+If your hosting account does not have SMTP configured, PHP's mail()
+function may not actually deliver the email. As a fallback for testing,
+the registration success screen also displays the confirmation link
+directly on screen so you can click it manually without needing a
+working mail server. For the actual submission/demo, we recommend
+configuring the host's SMTP (many free hosts like InfinityFree provide
+one) so the professor can see a real email arrive.
