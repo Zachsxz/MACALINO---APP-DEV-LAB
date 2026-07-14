@@ -1,0 +1,162 @@
+/* =====================================================================
+   ALLI IN TIMEPIECES — brand stylesheet
+   Palette: onyx / ivory / brass / burgundy
+   Type: Cormorant Garamond (display) + Jost (body) + JetBrains Mono (specs)
+   ===================================================================== */
+
+:root{
+  --onyx:        #0b0c0e;
+  --onyx-2:      #17191d;
+  --ivory:       #f3eee4;
+  --ivory-dim:   #b9b3a6;
+  --brass:       #b08d57;
+  --brass-light: #d9b97f;
+  --burgundy:    #6e2c3b;
+  --line:        #2b2d32;
+}
+
+*{ box-sizing:border-box; }
+
+body{
+  background:var(--onyx);
+  color:var(--ivory);
+  font-family:'Jost', 'Segoe UI', sans-serif;
+  font-weight:300;
+  letter-spacing:.01em;
+}
+
+h1,h2,h3,h4,.display-font{
+  font-family:'Cormorant Garamond', Georgia, serif;
+  font-weight:600;
+  letter-spacing:.02em;
+  color:var(--ivory);
+}
+
+.mono, .price, .specs{
+  font-family:'JetBrains Mono', monospace;
+}
+
+a{ color:var(--brass-light); text-decoration:none; }
+a:hover{ color:var(--brass); }
+
+/* ---------------- Navbar ---------------- */
+.navbar-alli{
+  background:var(--onyx);
+  border-bottom:1px solid var(--line);
+  padding:1rem 0;
+}
+.brand-mark{
+  display:flex; align-items:center; gap:.6rem;
+  font-family:'Cormorant Garamond', serif;
+  font-size:1.55rem; font-weight:600; color:var(--ivory);
+}
+.brand-mark small{
+  display:block; font-family:'Jost',sans-serif; font-size:.6rem;
+  letter-spacing:.3em; color:var(--brass); text-transform:uppercase;
+}
+.navbar-alli .nav-link{
+  color:var(--ivory-dim); text-transform:uppercase; font-size:.78rem;
+  letter-spacing:.12em; margin:0 .6rem;
+}
+.navbar-alli .nav-link:hover, .navbar-alli .nav-link.active{ color:var(--brass-light); }
+.cart-badge{
+  background:var(--burgundy); color:var(--ivory); border-radius:50%;
+  font-size:.65rem; padding:.15rem .45rem; margin-left:.25rem;
+}
+
+/* ---------------- Buttons ---------------- */
+.btn-brass{
+  background:var(--brass); border:1px solid var(--brass); color:var(--onyx);
+  text-transform:uppercase; letter-spacing:.12em; font-size:.78rem; padding:.6rem 1.4rem;
+  transition:.2s;
+}
+.btn-brass:hover{ background:var(--brass-light); border-color:var(--brass-light); color:var(--onyx); }
+.btn-outline-brass{
+  background:transparent; border:1px solid var(--brass); color:var(--brass-light);
+  text-transform:uppercase; letter-spacing:.12em; font-size:.78rem; padding:.55rem 1.3rem;
+}
+.btn-outline-brass:hover{ background:var(--brass); color:var(--onyx); }
+
+/* ---------------- Hero ---------------- */
+.hero{
+  position:relative; padding:5rem 0 4rem; overflow:hidden;
+  border-bottom:1px solid var(--line);
+}
+.hero .eyebrow{
+  text-transform:uppercase; letter-spacing:.35em; font-size:.72rem; color:var(--brass);
+}
+.hero h1{ font-size:3.4rem; line-height:1.05; }
+.hero p.lead-text{ color:var(--ivory-dim); font-size:1.05rem; max-width:34rem; }
+
+.watch-face{ animation: tick 60s linear infinite; transform-origin:150px 150px; }
+@keyframes tick{ from{ transform:rotate(0deg);} to{ transform:rotate(360deg);} }
+.watch-hand-hour{ transform-origin:150px 150px; animation: tick 480s linear infinite; }
+.watch-hand-min{ transform-origin:150px 150px; animation: tick 60s linear infinite; }
+
+/* ---------------- Cards / product grid ---------------- */
+.card-alli{
+  background:var(--onyx-2); border:1px solid var(--line); color:var(--ivory);
+  transition:.25s; height:100%;
+}
+.card-alli:hover{ border-color:var(--brass); transform:translateY(-4px); }
+.card-alli .card-img-top{ background:#101215; padding:1.4rem; }
+.card-alli .price{ color:var(--brass-light); font-size:1.05rem; }
+.category-pill{
+  display:inline-block; font-size:.68rem; text-transform:uppercase; letter-spacing:.1em;
+  color:var(--brass); border:1px solid var(--brass); border-radius:2px; padding:.15rem .5rem;
+  margin-bottom:.5rem;
+}
+
+/* ---------------- Sections ---------------- */
+section.band{ padding:3.5rem 0; }
+.divider{ border:none; border-top:1px solid var(--line); margin:0; }
+
+/* ---------------- Forms ---------------- */
+.form-control, .form-select{
+  background:var(--onyx-2); border:1px solid var(--line); color:var(--ivory);
+}
+.form-control:focus, .form-select:focus{
+  background:var(--onyx-2); border-color:var(--brass); color:var(--ivory);
+  box-shadow:0 0 0 .2rem rgba(176,141,87,.25);
+}
+label{ color:var(--ivory-dim); font-size:.85rem; letter-spacing:.03em; }
+.form-card{
+  background:var(--onyx-2); border:1px solid var(--line); padding:2rem; border-radius:2px;
+}
+
+/* ---------------- Tables (admin reports) ---------------- */
+.table-alli{ color:var(--ivory); }
+.table-alli thead{ color:var(--brass); text-transform:uppercase; font-size:.75rem; letter-spacing:.08em; }
+.table-alli td, .table-alli th{ border-color:var(--line) !important; vertical-align:middle; }
+
+/* ---------------- Alerts ---------------- */
+.alert-brass{ background:rgba(176,141,87,.12); border:1px solid var(--brass); color:var(--brass-light); }
+.alert-burgundy{ background:rgba(110,44,59,.25); border:1px solid var(--burgundy); color:#e5b3bf; }
+
+/* ---------------- Footer ---------------- */
+footer.site-footer{
+  background:var(--onyx-2); border-top:1px solid var(--line); color:var(--ivory-dim);
+  padding:2.2rem 0 1.2rem; font-size:.85rem; margin-top:3rem;
+}
+footer.site-footer .disclaimer{
+  font-size:.72rem; color:#7c7669; border-top:1px solid var(--line);
+  margin-top:1.4rem; padding-top:1rem; text-align:center;
+}
+
+/* ---------------- Admin shell ---------------- */
+.admin-sidebar{
+  background:var(--onyx-2); border-right:1px solid var(--line); min-height:100vh; padding:1.5rem 1rem;
+}
+.admin-sidebar a{
+  display:block; color:var(--ivory-dim); padding:.55rem .8rem; font-size:.85rem;
+  letter-spacing:.03em; border-radius:2px; margin-bottom:.2rem;
+}
+.admin-sidebar a:hover, .admin-sidebar a.active{ background:var(--onyx); color:var(--brass-light); }
+.stat-card{
+  background:var(--onyx-2); border:1px solid var(--line); padding:1.4rem; border-radius:2px;
+}
+.stat-card .stat-num{ font-family:'Cormorant Garamond',serif; font-size:2.3rem; color:var(--brass-light); }
+
+@media (max-width:768px){
+  .hero h1{ font-size:2.3rem; }
+}
