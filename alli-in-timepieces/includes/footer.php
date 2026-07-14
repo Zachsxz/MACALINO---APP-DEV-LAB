@@ -9,12 +9,10 @@
         <p class="mb-0">Precision timepieces, crafted for those who value quiet luxury.</p>
       </div>
       <div class="col-md-4 mb-3">
-        <strong class="text-uppercase" style="color:var(--brass); font-size:.8rem; letter-spacing:.1em;">Group 5 Members</strong>
+        <strong class="text-uppercase" style="color:var(--brass); font-size:.8rem; letter-spacing:.1em;">All In Members</strong>
         <ul class="list-unstyled mt-2 mb-0">
-          <li>Juan Dela Cruz — Project Lead / Backend</li>
-          <li>Maria Santos — Database Design</li>
-          <li>Pedro Reyes — Frontend / UI</li>
-          <li>Ana Lim — QA &amp; Documentation</li>
+          <li>Mathew Zachary L. Macalino — Project Lead / Backend QA &amp; Documentation</li>
+          <li>Maria Santos — Database Design/ Frontend / UI</li>
         </ul>
       </div>
       <div class="col-md-4 mb-3">
